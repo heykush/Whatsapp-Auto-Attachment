@@ -1,18 +1,18 @@
 from selenium import webdriver
 from time import sleep
 
-driver = webdriver.Chrome(r"C:\Users\gkush\Downloads\Compressed\chromedriver_win32\chromedriver.exe")
-driver.maximize_window()   #For maximizing window
+driver = webdriver.Chrome(r"%GIVE PATH OF CHROMEDRIVER.EXE")
+driver.maximize_window()                                        #For maximizing window
 driver.get('https://web.whatsapp.com/')
 
-if __name__ == "__main__":        #loop for true value of sucess 
+if __name__ == "__main__":                                       #loop for true value of sucess 
     while True:
         input('Enter anything after scanning QR code..  Hit ENTER to start')
         name = input('Enter the name of User or Number or Group : ')
-        capname=name.title()                        #captilize the first letter of name and surname
+        capname=name.title()                                        #captilize the first letter of name and surname
         
-        if name.isdigit():                          #check input is number or not
-            val=(f'+91 {name[:5]} {name[5:]}')      #f sring to make in number form
+        if name.isdigit():                                          #check input is number or not
+            val=(f'+91 {name[:5]} {name[5:]}')                      #f sring to make in number form
         else:
             val = str(capname)
 
