@@ -1,11 +1,11 @@
 from selenium import webdriver
 from time import sleep
-from pip._vendor.distlib.compat import raw_input
+import platform
                                        
 if platform.system() == "Linux":                                # get the driver for individual browser
     driver = webdriver.Chrome('/usr/bin/chromedriver')
 elif platform.system() == "Windows":
-    driver = webdriver.Chrome(r"GIVE PATH OF CHROMEDRIVER.EXE")
+    driver = webdriver.Chrome(r"C:\Python\chromedriver.exe")      #place your chromedriver in this path or Give your chrome driver path
 else:
     exit("404: Only Linux and Windows is supported")
 
