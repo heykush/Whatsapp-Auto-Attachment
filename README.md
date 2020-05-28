@@ -5,9 +5,14 @@ It Automate Whatsapp attachment through Terminal
 - pip install `selenium`
 - pip install `time`
 
-***You need to download [CromeDriver](https://chromedriver.chromium.org/downloads) here.***
+***You need to download [ChromeDriver](https://chromedriver.chromium.org/downloads) here.***
 *To give the path in webdriver*
 
+## Requirements
+Run requirements in terminal
+~~~
+pip install -m requirements.txt
+~~~
 Contributing
 ==========
 Any kind of contributions are welcome.
