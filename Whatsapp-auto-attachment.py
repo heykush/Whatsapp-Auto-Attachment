@@ -1,7 +1,14 @@
 from selenium import webdriver
 from time import sleep
+from pip._vendor.distlib.compat import raw_input
+                                       
+if platform.system() == "Linux":                                # get the driver for individual browser
+    driver = webdriver.Chrome('/usr/bin/chromedriver')
+elif platform.system() == "Windows":
+    driver = webdriver.Chrome(r"GIVE PATH OF CHROMEDRIVER.EXE")
+else:
+    exit("404: Only Linux and Windows is supported")
 
-driver = webdriver.Chrome(r"%GIVE PATH OF CHROMEDRIVER.EXE")
 driver.maximize_window()                                        #For maximizing window
 driver.get('https://web.whatsapp.com/')
 
