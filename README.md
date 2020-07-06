@@ -1,7 +1,7 @@
 # Whatsapp-Auto-Attachment
 It Automate Whatsapp attachment through Terminal 
 
- ## Install Module
+ ## Install Modules
 - pip install `selenium`
 - pip install `time`
 
